@@ -9,10 +9,10 @@ phases:
       - pip install -r requirements.txt
   pre_build:
     commands:
-      - echo Running pre-build steps (if any)
+      - echo Running pre-build steps \(if any\)  # Escape parentheses
   build:
     commands:
-      - echo Running application tests "if any"  # Use quotes to handle parentheses
+      - echo Running application tests \(if any\)  # Escape parentheses
   post_build:
     commands:
       - echo Build completed
