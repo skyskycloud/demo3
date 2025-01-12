@@ -8,7 +8,7 @@ def home():
 
 @app.route('/hello')
 def hello():
-    return "Welcome to Skylark. Welcome to demo 3 lab."
+    return "Welcome to Skylark. Welcome to demo 3 lab.code build project"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
