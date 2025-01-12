@@ -1,0 +1,14 @@
+{
+  "name": "demo-3-flask-app",
+  "version": "1.0.0",
+  "description": "A simple Flask application",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "dev": "FLASK_ENV=development python app.py"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
