@@ -1,1 +1,2 @@
 Flask==2.2.5
+gunicorn==20.1.0  # Optional, if you're deploying using Gunicorn
