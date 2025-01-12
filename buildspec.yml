@@ -1,16 +1,23 @@
 version: 0.2
+
 phases:
   install:
+    runtime-versions:
+      python: 3.9  # Adjust Python version as needed
     commands:
-      - echo Installing dependencies
-      - npm install
+      - echo Installing Python dependencies
+      - python -m pip install --upgrade pip
+      - pip install -r requirements.txt  # Install dependencies from requirements.txt
+
   build:
     commands:
-      - echo Building the application
-      - npm run build
+      - echo Running application tests (if any)
+      - pytest  # If you have tests, run them here
+
   post_build:
     commands:
       - echo Build completed
+
 artifacts:
   files:
     - '**/*'
