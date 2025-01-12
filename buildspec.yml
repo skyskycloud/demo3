@@ -3,16 +3,18 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.9  # Adjust Python version as needed
+      python: 3.9
     commands:
+      - echo Navigating to the backend directory
+      - cd backend  # If your Flask project is in a subdirectory
       - echo Installing Python dependencies
       - python -m pip install --upgrade pip
-      - pip install -r requirements.txt  # Install dependencies from requirements.txt
+      - pip install -r requirements.txt  # Install Python dependencies
 
   build:
     commands:
       - echo Running application tests (if any)
-      - pytest  # If you have tests, run them here
+      - pytest  # Optional: run tests if available
 
   post_build:
     commands:
