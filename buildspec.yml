@@ -1,25 +1,21 @@
 version: 0.2
-
 phases:
   install:
-    runtime-versions:
-      python: 3.9
     commands:
       - echo Navigating to the backend directory
-      - cd backend  # If your Flask project is in a subdirectory
+      - cd backend
       - echo Installing Python dependencies
       - python -m pip install --upgrade pip
-      - pip install -r requirements.txt  # Install Python dependencies
-
+      - pip install -r requirements.txt
+  pre_build:
+    commands:
+      - echo Running pre-build steps (if any)
   build:
     commands:
-      - echo Running application tests (if any)
-      - pytest  # Optional: run tests if available
-
+      - echo Running application tests "if any"  # Use quotes to handle parentheses
   post_build:
     commands:
       - echo Build completed
-
 artifacts:
   files:
     - '**/*'
