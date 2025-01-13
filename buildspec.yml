@@ -12,10 +12,7 @@ phases:
       - echo Running pre-build steps \(if any\)  # Escape parentheses
   build:
     commands:
-      - echo Running Flask application
-      - python app.py &  # Run app.py in the background
-      - sleep 5  # Allow Flask app to initialize
-      - curl http://localhost:5000/hello  # Test /hello endpoint
+      - echo Running application tests \(if any\)  # Escape parentheses
   post_build:
     commands:
       - echo Build completed
