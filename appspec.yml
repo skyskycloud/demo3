@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /backend
-    destination: /home/ec2-user/my-flask-app
+    destination: /home/ubuntu/my-flask-app
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
