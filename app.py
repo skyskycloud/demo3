@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to Demo-3 Flask App!"
+    return "Welcome to Demo-04 Flask App!"
 
 @app.route('/hello')
 def hello():
